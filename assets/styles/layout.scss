@@ -613,7 +613,7 @@ button {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background: #00dc72;
+  background: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -649,11 +649,11 @@ button {
 
   &.text-mode {
     .cursor-icon {
-      display: none;
+      display: block;
     }
 
     .cursor-text {
-      display: block;
+      display: none;
     }
   }
 }

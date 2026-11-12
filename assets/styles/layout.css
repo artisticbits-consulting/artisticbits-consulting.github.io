@@ -593,7 +593,7 @@ button {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background: #00dc72;
+  background: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -627,10 +627,10 @@ button {
   }
 }
 .custom-cursor.text-mode .cursor-icon {
-  display: none;
+  display: block;
 }
 .custom-cursor.text-mode .cursor-text {
-  display: block;
+  display: none;
 }
 
 .navbar-toggler {
