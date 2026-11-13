@@ -44,13 +44,33 @@
   });
 
   if (!reducedMotion) {
-    gsap.from(phases, {
-      y: 18,
-      autoAlpha: 0,
-      duration: 0.55,
-      stagger: 0.09,
-      ease: 'power2.out',
-      scrollTrigger: { trigger: main, start: 'top 82%', once: true },
+    // Keep the whole process readable throughout its long scroll. The lower
+    // rows should not remain hidden after the one-time entrance animation.
+    gsap.fromTo(main,
+      { filter: 'blur(7px)' },
+      {
+        filter: 'blur(0px)',
+        ease: 'none',
+        scrollTrigger: {
+          trigger: main,
+          start: 'top 88%',
+          end: 'top 38%',
+          scrub: 0.45,
+          invalidateOnRefresh: true,
+        },
+      }
+    );
+
+    gsap.to(main, {
+      filter: 'blur(7px)',
+      ease: 'none',
+      scrollTrigger: {
+        trigger: main,
+        start: 'bottom 62%',
+        end: 'bottom 12%',
+        scrub: 0.45,
+        invalidateOnRefresh: true,
+      },
     });
   }
 
