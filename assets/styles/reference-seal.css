@@ -1,0 +1,9 @@
+.studio-seal{width:140px;height:140px;border:0;margin:0 auto 18px;display:grid;place-items:center;color:inherit}
+.studio-seal svg{width:100%;height:100%;overflow:visible}
+.studio-seal .seal-art{position:absolute;z-index:1;width:66%;height:66%;object-fit:contain}
+.studio-seal svg{position:relative;z-index:2}
+.studio-seal .seal-words{font-family:Clash,Arial,sans-serif;font-size:7px;font-weight:500;letter-spacing:1.4px;fill:#454741}
+.studio-seal .seal-text-orbit{transform-box:view-box;transform-origin:center;animation:seal-orbit 28s linear infinite}
+@keyframes seal-orbit{to{transform:rotate(360deg)}}
+@media(max-width:650px){.studio-seal{width:108px;height:108px;margin-bottom:21px}.studio-seal .seal-words{font-size:7.7px;letter-spacing:1.3px}}
+@media(prefers-reduced-motion:reduce){.studio-seal .seal-text-orbit{animation:none}}

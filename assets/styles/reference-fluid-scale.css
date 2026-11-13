@@ -1,0 +1,45 @@
+@media(min-width:1200px){
+  .brand img{width:clamp(100px,8vw,132px)}
+  .section-nav>a{font-size:clamp(14px,1vw,17px)}
+  .section-nav>a small{font-size:clamp(8px,.62vw,10px)}
+  .availability{font-size:clamp(10px,.8vw,13px)}
+  .hero-center>p{font-size:clamp(15px,1.2vw,20px)}
+  .hero-actions .pill-button{height:clamp(45px,3.4vw,54px);font-size:clamp(11px,.9vw,15px)}
+  .hero-actions .pill-button span{width:clamp(22px,1.7vw,27px);height:clamp(22px,1.7vw,27px)}
+  .hero-actions small{font-size:clamp(10px,.75vw,13px)}
+  .aside-kicker{font-size:clamp(10px,calc(.7vw + 1px),12px)}
+  .sidebar-content>p{font-size:clamp(13px,calc(.85vw + 1px),16px)}
+  .feature-top{font-size:clamp(10px,.75vw,12px)}
+  .feature-top a{font-size:clamp(10px,.72vw,12px)}
+  .feature-bottom h3{font-size:clamp(19px,1.35vw,23px)}
+  .feature-bottom p,.feature-bottom>span{font-size:clamp(10px,.75vw,13px)}
+  .service-detail p{font-size:clamp(12px,.85vw,15px)}
+  .service-tags span{font-size:clamp(9px,.7vw,12px)}
+  .service-footnote{font-size:clamp(11px,.8vw,13px)}
+  .phase-copy small{font-size:clamp(8px,.65vw,10px)}
+  .phase-copy h3{font-size:clamp(20px,1.4vw,24px)}
+  .phase-copy p{font-size:clamp(11px,.8vw,14px)}
+  .phase-tags{font-size:clamp(9px,.7vw,12px)}
+  .benefit-grid h3{font-size:clamp(20px,1.35vw,23px)}
+  .benefit-grid p{font-size:clamp(11px,.8vw,14px)}
+  .story-credit b{font-size:clamp(12px,.85vw,15px)}
+  .story-credit small{font-size:clamp(9px,.68vw,12px)}
+  .contact-form label{font-size:clamp(9px,.7vw,12px)}
+  .contact-form input,.contact-form textarea,.contact-form select{font-size:clamp(12px,.85vw,15px)}
+  .contact-form button{font-size:clamp(11px,.8vw,14px)}
+  .contact-form>small,.form-note{font-size:clamp(8px,.62vw,10px)}
+  .faq-block summary{font-size:clamp(13px,.9vw,16px)}
+  .faq-block details p{font-size:clamp(11px,.8vw,14px)}
+  .footer-links{font-size:clamp(10px,.72vw,13px)}
+}
+
+.section-number{font-size:clamp(66px,calc(8vw + 1px),113px)}
+.section-number small{font-size:10px}
+.aside-kicker{font-size:10px}
+.sidebar-content>p{font-size:13px}
+
+@media(max-width:650px){
+  .section-number{font-size:65px}
+  .aside-kicker{font-size:9px}
+  .section-aside>p{font-size:11px}
+}
