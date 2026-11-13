@@ -18,8 +18,8 @@
 .service-tags span{border:1px solid var(--rule);border-radius:20px;padding:6px 10px;color:#73756e;font-size:clamp(9px,.72vw,12px)}
 .service-cta{display:inline-flex;align-items:center;margin-top:18px;padding-bottom:5px;border-bottom:1px solid #cfd0cb;font-size:11px;color:var(--ink)}
 .service-cta b{margin-left:17px;color:var(--lime-deep);font-weight:500}
-.service-visual{position:relative;min-width:0;margin:0;overflow:hidden;border-radius:11px;background:#f1f2ef;aspect-ratio:1.72/1}
-.service-visual img{display:block;width:100%;height:100%;object-fit:cover;object-position:top center}
+.service-visual{position:relative;min-width:0;margin:0;overflow:hidden;border:1px solid var(--rule);border-radius:11px;background:#fff;aspect-ratio:1.72/1}
+.service-visual img{display:block;width:100%;height:100%;object-fit:contain;object-position:center}
 .service-visual figcaption{position:absolute;right:9px;bottom:9px;padding:6px 9px;border-radius:20px;background:#fffE;color:#55574f;font-size:9px;backdrop-filter:blur(8px)}
 .service-footnote{margin-top:26px}
 @media(max-width:900px){.service-detail{grid-template-columns:minmax(0,1fr) minmax(165px,.85fr);gap:20px;padding-left:52px}.service-toggle{min-height:65px}}
