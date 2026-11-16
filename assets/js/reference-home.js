@@ -133,6 +133,7 @@
     const data = new FormData(form);
     const subject = encodeURIComponent(`Project enquiry from ${data.get('name')}`);
     const body = encodeURIComponent(`Name: ${data.get('name')}\nEmail: ${data.get('email')}\nBudget: ${data.get('budget') || 'Not specified'}\n\nProject:\n${data.get('project') || ''}`);
-    window.location.href = `mailto:hello@artisticbits.com?subject=${subject}&body=${body}`;
+    const composeUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=akakenterprises%40gmail.com&su=${subject}&body=${body}`;
+    window.location.assign(composeUrl);
   });
 })();
